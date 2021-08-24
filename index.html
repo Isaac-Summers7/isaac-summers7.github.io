@@ -1,1 +1,21 @@
 Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/alpinejs" defer></script>
+    </head>
+
+    <body x-data="{ message: 'world!' }">
+        <div>
+            <p>Hello <span x-text="message"></span></p>
+        </div>
+
+        <div>New Message: <input type="text" x-model="message"></div>
+        
+        <p>this is a test</p>
+    </body>
+</html>
