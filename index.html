@@ -15,9 +15,11 @@
 
         <p class="text-green-500 text-center">I'm a new computer science major at Rocky Mountain College.</p>
 
-        <a>
+        <a class="text-indigo-500 text-center" href="https://github.com/">GitHub</a>
 
-        <button x-on:click="imgShow = ! imgShow" class="text-red-500">Show Image</button>
+        <div>
+            <button x-on:click="imgShow = ! imgShow" class="text-red-500 text-center">Show Image</button>
+        </div>
 
         <div x-show="imgShow">
             <img src="./Twig.png" alt="FAIL">
