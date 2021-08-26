@@ -8,15 +8,19 @@
         <script src="https://unpkg.com/alpinejs" defer></script>
     </head>
 
-    <body class="bg-black" x-data="{ menuOpen: false }">
+    <body class="bg-black" x-data="{ imgShow: false }">
         <div>
             <p class="text-blue-500 text-5xl text-center font-bold">HELLO WORLD</p>
         </div>
 
-        <p>I'm a new computer science major at Rocky Mountain College.</p>
-
-        <img src="./Twig.png" alt="FAIL">
+        <p class="text-green-500 text-center">I'm a new computer science major at Rocky Mountain College.</p>
 
         <a>
+
+        <button x-on:click="imgShow = ! imgShow" class="text-red-500">Show Image</button>
+
+        <div x-show="imgShow">
+            <img src="./Twig.png" alt="FAIL">
+        </div>
     </body>
 </html>
